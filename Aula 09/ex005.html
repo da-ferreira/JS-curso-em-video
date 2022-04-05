@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background-color: #d3d3d3;
+            font: normal 1.3em Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        // Posso ocultar o window. Pegando elementos DOM por marcas (tags). Estou pegando a segunda tag p
+        var p1 = document.getElementsByTagName('p')[1]
+
+        /*
+        p1.style.color = 'blue'
+        document.body.style.background = '#ffffff'  // Mudando a cor do body para BRANCO
+
+        window.document.write("Está escrito assim: " + p1.innerText + "<br>")
+        window.document.write("Está escrito assim: " + p1.innerHTML)
+
+        var d_msg = document.getElementById('msg')
+        d_msg.style.background = 'blue'
+        d_msg.innerText = "Mudei o texto da div"
+
+        document.getElementsByName('msg')[0].innerText = "Mudei o texto da div, denovo"
+        */
+
+        var d = document.querySelector('div#msg')
+        d.style.color = 'red'
+
+    </script>
+</body>
+</html>
